@@ -1,0 +1,19 @@
+{
+  "name": "js_css_portfolioproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChisengaSol/JS_CSS_PortfolioProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChisengaSol/JS_CSS_PortfolioProject/issues"
+  },
+  "homepage": "https://github.com/ChisengaSol/JS_CSS_PortfolioProject#readme"
+}
