@@ -18,11 +18,14 @@
 
 <body class="main-content">
     <div style="text-align: center;">
+        <br>
         <h4>Thank You For THe Message!!!</h4>
-        <a href="index.html" class="main-btn">
+        <div id="thanksbtn>
+            <a href=" index.html" class="main-btn">
             <span class="btn-text">Go Back To Portfolio</span>
             <span class="btn-icon"><i class="fas fa-arrow-alt-circle-left"></i></span>
-        </a>
+            </a>
+        </div>
     </div>
 </body>
 

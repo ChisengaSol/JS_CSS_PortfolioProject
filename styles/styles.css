@@ -74,6 +74,14 @@ section {
   padding: 3rem 18rem;
 }
 
+#thanksbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
 .section {
   -webkit-transform: translateY(-100%) scale(0);
   transform: translateY(-100%) scale(0);
