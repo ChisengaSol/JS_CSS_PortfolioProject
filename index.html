@@ -519,14 +519,13 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form" action="https://formsubmit.co/tchisenga16@gmail.com"
+                        <!-- <form action="" class="contact-form" action="https://formsubmit.co/tchisenga16@gmail.com"
                             method="POST">
                             <div class="input-control i-c-2">
                                 <input type="text" name="name" required placeholder="YOUR NAME">
                                 <input type="email" name="email" required placeholder="YOUR EMAIL">
                                 <input type="hidden" name="_next"
                                     value="https://tonychisenga.herokuapp.com/thankyou.php">
-                                <!--Thank you for submit-->
                             </div>
                             <div class="input-control">
                                 <input type="text" name="_subject" required placeholder="ENTER SUBJECT">
@@ -541,12 +540,28 @@
                                     <span class="btn-icon"><i class="fas fa-inbox"></i></span>
                                 </button>
                             </div>
-                            <!-- <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div> -->
+                        </form> -->
+                        <form target="_blank" class="contact-form" action="https://formsubmit.co/tchisenga16@gmail.com"
+                            method="POST">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="name" required placeholder="YOUR NAME" required>
+                                <input type="email" name="email" class="form-control" required placeholder="YOUR EMAIL">
+                                <input type="hidden" name="_next"
+                                    value="https://tonychisenga.herokuapp.com/thankyou.php">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="_subject" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea placeholder="Your Message" class="form-control" name="message" cols="15"
+                                    rows="8" required placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit" type="submit" class="main-btn">
+                                    <span class="btn-text">Submit Message</span>
+                                    <span class="btn-icon"><i class="fas fa-inbox"></i></span>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
