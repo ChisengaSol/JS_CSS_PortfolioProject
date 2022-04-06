@@ -19,7 +19,7 @@
 <body class="main-content">
     <div style="text-align: center;">
         <br>
-        <h4>Thank You For THe Message!!!</h4>
+        <h4>Thank You For The Message!!!</h4>
         <div id="thanksbtn">
             <a href="index.html" class="main-btn">
                 <span class="btn-text">Go Back To Portfolio</span>
