@@ -50,6 +50,13 @@ a {
     font-family: inherit;
 }
 
+button {
+    display: inline-block;
+    text-decoration: none;
+    font-family: inherit;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 header {
     min-height: 100vh;
     color: var(--color-white);
