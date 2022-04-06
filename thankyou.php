@@ -18,7 +18,7 @@
 
 <body class="main-content">
     <div class="header-content">
-        <h4>Thank You For THe Message!!!</h4><br>
+        <h4 style="text-align: center;">Thank You For THe Message!!!</h4>
         <div class="btn-con">
             <a href="index.html" class="main-btn">
                 <span class="btn-text">Go Back To Portfolio</span>
