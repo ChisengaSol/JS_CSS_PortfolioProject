@@ -99,18 +99,18 @@
                 <h4 class="stat-title">My Skills</h4>
                 <div class="progress-bars">
                     <div class="progress-bar">
-                        <p class="prog-title">html5</p>
+                        <p class="prog-title">html</p>
                         <div class="progress-con">
-                            <p class="prog-text">80%</p>
+                            <p class="prog-text">95%</p>
                             <div class="progress">
                                 <span class="html"></span>
                             </div>
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">css3</p>
+                        <p class="prog-title">css</p>
                         <div class="progress-con">
-                            <p class="prog-text">95%</p>
+                            <p class="prog-text">75%</p>
                             <div class="progress">
                                 <span class="css"></span>
                             </div>
@@ -126,18 +126,18 @@
                         </div>
                     </div>
                     <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
+                        <p class="prog-title">VueJS</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
                             <div class="progress">
-                                <span class="react"></span>
+                                <span class="vue"></span>
                             </div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">NodeJS</p>
                         <div class="progress-con">
-                            <p class="prog-text">87%</p>
+                            <p class="prog-text">75%</p>
                             <div class="progress">
                                 <span class="node"></span>
                             </div>
@@ -146,7 +146,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">Python</p>
                         <div class="progress-con">
-                            <p class="prog-text">70%</p>
+                            <p class="prog-text">80%</p>
                             <div class="progress">
                                 <span class="python"></span>
                             </div>
@@ -361,7 +361,7 @@
                 </div>
             </div>
         </section>
-        <section class="section sec4 " id="blogs">
+        <!-- <section class="section sec4 " id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
                     <h2>My <span>Blogs</span></h2>
@@ -441,7 +441,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="section sec5 contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -484,7 +484,7 @@
                             </div>
                             <div class="contact-item">
                                 <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
+                                    <i class="fas fa-phone"></i>
                                     <span>Mobile Number</span>
                                 </div>
                                 <p>
@@ -522,22 +522,22 @@
                         <form target="_blank" class="contact-form" action="https://formsubmit.co/tchisenga16@gmail.com"
                             method="POST">
                             <div class="input-control i-c-2">
-                                <input type="text" name="name" required placeholder="YOUR NAME" required>
-                                <input type="email" name="email" class="form-control" required placeholder="YOUR EMAIL">
+                                <input type="text" name="name" id="name" required placeholder="YOUR NAME" required>
+                                <input type="email" name="email" class="form-control" id="email" required placeholder="YOUR EMAIL">
                                 <input type="hidden" name="_next"
                                     value="https://tonychisenga.herokuapp.com/thankyou.php">
                             </div>
                             <div class="input-control">
-                                <input type="text" name="_subject" required placeholder="ENTER SUBJECT">
+                                <input type="text" name="_subject" id="subject" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea placeholder="Your Message" class="form-control" name="message" cols="15"
+                                <textarea placeholder="Your Message" class="form-control" name="message" id="message" cols="15"
                                     rows="8" required placeholder="Message Here..."></textarea>
                             </div>
                             <div class="submit-btn">
                                 <button type="submit" type="submit" class="main-btn">
                                     <span class="btn-text">Submit Message</span>
-                                    <span class="btn-icon"><i class="fas fa-inbox"></i></span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
                                 </button>
                             </div>
                         </form>
@@ -557,9 +557,9 @@
         <div class="control control-3" data-id="portfolio">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control control-4" data-id="blogs">
+        <!-- <div class="control control-4" data-id="blogs">
             <i class="far fa-newspaper"></i>
-        </div>
+        </div> -->
         <div class="control control-5" data-id="contact">
             <i class="fas fa-envelope-open"></i>
         </div>
@@ -570,6 +570,22 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const form = document.querySelector(".contact-form"),
+                name = document.querySelector("#name");
+        function sendEmail(){
+            Email.send({
+                SecureToken : "53d5806d-5828-4992-87c1-fc516b4fa672",
+                To : 'tchisenga16@gmail.com',
+                From : document.querySelector("#email").value,
+                Subject : document.querySelector("#subject").value,
+                Body : document.querySelector("#message").value
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 </body>
 
 </html>
